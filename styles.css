@@ -1,9 +1,108 @@
-body{
-  padding: 5% 10%;
+body h4,h1,h3,h5{
+  font-family: 'Quicksand', sans-serif;
+}
+body h4{
+  text-shadow: 3px 3px 8px black;
+}
+p{
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 #diversity1{
   padding-left:15%;
 }
 #diversity2{
   padding-right:25%;
+}
+.image-diversity{
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#nav{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+
+}
+
+.head{
+  padding: 5% 10%;
+  padding-bottom: 30%;
+  background-image: url("https://images.thequint.com/thequint-fit%2F2019-10%2Fb93bc990-00a5-47d5-bcc2-881842d0c1a2%2FiStock_486836087.jpg?auto=format%2Ccompress&fmt=webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.head-info{
+  padding-top: 20%;
+  text-shadow: 3px 3px 8px #fff;
+  font-size: 5rem;
+}
+
+.head-head{
+  font-size: 2rem;
+}
+ /* Cities */
+
+.cities{
+  padding: 5% 10%;
+  color: #2C2891;
+}
+
+.cities h4,p{
+  text-align: center;
+}
+
+.heading{
+  padding: 3%;
+}
+
+.branch{
+  text-align: center;
+  padding: 7% 15%;
+  background: linear-gradient(to right,  #A2D2FF, pink);
+}
+
+.branch-head{
+  font-size: 2rem;
+}
+
+.table{
+  font-size: 1rem;
+}
+
+.form{
+  text-overflow: clip;
+  padding:5%;
+}
+
+.places-button{
+  background-color: #A2D2FF;
+  border: #A2D2FF;
+  color: black;
+}
+
+.travel-info{
+   background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
+
+}
+
+#references{
+  background: linear-gradient(to top, black, 20%, #A2D2FF);
+  padding: 5%;
+}
+
+.findUs{
+  text-decoration: none;
+  color: #fff;
 }

@@ -1,125 +1,252 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CN-BOOCAMP</title>
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Adding css -->
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <center><h1>Travel Agency</h1></center>
-    <div class="cities">
-      <h4>Where to travel in India?</h4>
-      <p>Here are some amazing places to travel in India </p>
-      <ul>
-        <li>Rajesthan</li>
-        <li>Kashmir</li>
-        <li>Rishikesh</li>
-        <li>Varanasi</li>
-        <li>Amritsar</li>
-        <li>Goa</li>
-        <li>Darjaling</li>
-        <li>Nanital</li>
-      </ul>
-      <hr>
+
+<head>
+  <meta charset="utf-8">
+  <title>CN-BOOCAMP</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Adding css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Travel Agency</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#cities">Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#branches">Branch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#references">References</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <h4>Where to find us</h4>
-    <table border="1">
-      <tr style="border-bottom: 1px solid black;">
-        <th>City</th>
-        <th>Phone number</th>
-        <th>Address</th>
-      </tr>
-      <tr style="border-bottom: 1px solid black;">
-        <td>Delhi</td>
-        <td>99872619</td>
-        <td>Rajouri Garden</td>
-      </tr>
-      <tr style="border-bottom: 1px solid black;">
-        <td>Mumbai</td>
-        <td>892928290</td>
-        <td>Juhu</td>
-      </tr>
-      <tr style="border-bottom: 1px solid black;">
-        <td>Chennai</td>
-        <td>992829211</td>
-        <td>Potheri</td>
-      </tr>
-      <tr style="border-bottom: 1px solid black;">
-        <td>Ahemdabad</td>
-        <td>738227901</td>
-        <td>ABC </td>
-      </tr>
-    </table>
+  </nav>
+  <div class="head row">
+    <div class="col-lg-4 head-info">
+      <h1 class="head-head">Travel with us</h1>
+      <h3 class="head-head">Get best experience <br> <br /><button class="button-info btn btn-light">Let's Go</button></h3>
+    </div>
+  </div>
+
+  <div id="cities" class="cities">
+    <h4>Where to travel in India?</h4>
+    <p>Here are some amazing places to travel in India </p>
     <br>
-    <hr>
+    <ul>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.langimg.com/thumb/msid-83504462,imgsize-447856,width-700,height-525,resizemode-75/navbharat-times.jpg" class="card-img-top" alt="..." height="190">
+            <div class="card-body">
+              <h5 class="card-title">Rajasthan</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.traveldailymedia.com/assets/2021/10/kashmir.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">kashmir</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/05/GettyImages-148989288.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nanital</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/Golden_Temple_HDR_20170809172618_20180906161916.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Amritsar</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/2999_20190305160539.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Leh Ladak</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://i1.wp.com/onedayitinerary.com/wp-content/uploads/2019/01/One-day-in-Goa-Itinerary.jpg?resize=723%2C542" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Goa</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Evening_view%2C_City_Palace%2C_Udaipur.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Udaipur</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.holidify.com/images/bgImages/MCLEODGANJ.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mcleodganj</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.holidify.com/images/bgImages/RISHIKESH.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rishikesh</h5>
+              <a href="#" class="btn btn-primary places-button">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div id="branches" class="branch">
+    <h4 class="branch-head">Where to find us</h4>
     <br>
-    <h4>Give information so that we can contact you</h4>
-    <form class="" action="index.html" method="post">
-      <label>Your Name: &nbsp;</label><input type="text" name="" value=""> <br> <br>
-      <label>Gender:</label><br>
-      <label for="">Male &nbsp;</label><input type="radio" name="" value="">
-      <label>Female &nbsp; </label><input type="radio" name="" value="">
-      <label>Other &nbsp; </label><input type="radio" name="" value=""> <br> <br>
-      <label>Address: &nbsp; </label><textarea name="" rows="3" cols="80"></textarea> <br> <br>
-      <label>Email: &nbsp; </label><input type="email" name="" value=""> <br> <br>
-      <label>Phone Number: &nbsp; </label><input type="text" name="" value=""> <br> <br>
-      <center>
-        <button class="btn btn-dark"type="submit" name="button">Submit</button>
-        <button class="btn btn-dark" type="reset" name="button">Reset</button>
-      </center>
-    </form>
-    <hr>
-    <h4>Travelling information</h4>  <br>
-    <form class="" action="index.html" method="post">
-      <label for="">Where do you want to travel in India &nbsp;</label> <input type="text" name="" value=""> <br> <br>
-      <label>When do you want to travel &nbsp; </label><input type="date" name="" value=""> <br> <br>
-      <label>How many people &nbsp; </label><input type="number" name="" value=""> <br> <br>
-      <label>Travel via &nbsp;</label> <select class="" name="" value=" ">
-        <option value="" disabled selected>Select here</option>
-        <option value="">Aeroplane</option>
-        <option value="">Bus</option>
-        <option value="">Train</option>
-        <option value="">Car</option>
-      </select> <br>
-      <center>
-        <button class="btn btn-dark"type="submit" name="button">Submit</button>
-        <button class="btn btn-dark" type="reset" name="button">Reset</button>
-      </center>
-    </form>
-    <br>
-    <hr>
     <center>
-    <h4>Here's a glimpse of diversity in India</h4>  <br>
+      <table class="table" border="1">
+        <tr style="border-bottom: 1px solid black;">
+          <th>City</th>
+          <th>Phone number</th>
+          <th>Address</th>
+        </tr>
+        <tr style="border-bottom: 1px solid black;">
+          <td>Delhi</td>
+          <td>99872619</td>
+          <td>Rajouri Garden</td>
+        </tr>
+        <tr style="border-bottom: 1px solid black;">
+          <td>Mumbai</td>
+          <td>892928290</td>
+          <td>Juhu</td>
+        </tr>
+        <tr style="border-bottom: 1px solid black;">
+          <td>Chennai</td>
+          <td>992829211</td>
+          <td>Potheri</td>
+        </tr>
+        <tr style="border-bottom: 1px solid black;">
+          <td>Ahemdabad</td>
+          <td>738227901</td>
+          <td>ABC </td>
+        </tr>
+      </table>
+    </center>
+  </div>
+  <br>
+  <br>
+  <center>
+    <h4>Give information so that we can contact you</h4>
+  </center>
+  <br>
+  <form class="form" action="index.html" method="post">
+    <div class="row">
+      <div class="col-lg-6">
+        <label>Your Name: &nbsp;</label><br /><input type="text" name="" value=""> <br> <br>
+        <label>Gender:</label><br>
+        <input type="radio" name="" value="">&nbsp;<label for="">Male</label> <br>
+        <input type="radio" name="" value="">&nbsp;<label>Female</label><br>
+        <input type="radio" name="" value="">&nbsp;<label>Other </label> <br> <br>
+      </div>
+      <div class="col-lg-6">
+        <label>Address: &nbsp; </label><textarea name="" rows="3" cols="80"></textarea> <br> <br>
+        <label>Email: &nbsp; </label><input type="email" name="" value=""> <br> <br>
+        <label>Phone Number: &nbsp; </label><input type="text" name="" value=""> <br> <br>
+      </div>
+    </div>
+    <br><br>
+    <center>
+      <button class="btn btn-dark" type="submit" name="button">Submit</button>
+      <button class="btn btn-dark" type="reset" name="button">Reset</button>
+    </center>
+  </form>
+  <form class="form travel-info" action="index.html" method="post">
+    <center>
+      <h4>Travelling information</h4> <br>
+    </center>
+    <label for="">Where do you want to travel in India &nbsp;</label> <input type="text" name="" value=""> <br> <br>
+    <label>When do you want to travel &nbsp; </label><input type="date" name="" value=""> <br> <br>
+    <label>How many people &nbsp; </label><input type="number" name="" value=""> <br> <br>
+    <label>Travel via &nbsp;</label> <select class="" name="" value=" ">
+      <option value="" disabled selected>Select here</option>
+      <option value="">Aeroplane</option>
+      <option value="">Bus</option>
+      <option value="">Train</option>
+      <option value="">Car</option>
+    </select> <br>
+    <center>
+      <button class="btn btn-dark" type="submit" name="button">Submit</button>
+      <button class="btn btn-dark" type="reset" name="button">Reset</button>
+    </center>
+  </form>
+  <br />
+  <center>
+    <h4>Here's a glimpse of diversity in India</h4> <br>
     <div class="row">
       <div class="column">
-        <img src="https://i.pinimg.com/474x/bc/9e/a1/bc9ea15d56014aa6d404009f2399fe79.jpg" alt="" width="300" height="400">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Unity_In_Diversity_-_Opening_Ceremony_-_Wiki_Conference_India_-_CGC_-_Mohali_2016-08-05_6656.JPG/1200px-Unity_In_Diversity_-_Opening_Ceremony_-_Wiki_Conference_India_-_CGC_-_Mohali_2016-08-05_6656.JPG" alt="" width="300" height=" 300">
+        <img class="image-diversity" src="https://i.pinimg.com/474x/bc/9e/a1/bc9ea15d56014aa6d404009f2399fe79.jpg" alt="" width="300" height="400">
+        <img class="image-diversity"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Unity_In_Diversity_-_Opening_Ceremony_-_Wiki_Conference_India_-_CGC_-_Mohali_2016-08-05_6656.JPG/1200px-Unity_In_Diversity_-_Opening_Ceremony_-_Wiki_Conference_India_-_CGC_-_Mohali_2016-08-05_6656.JPG"
+          alt="" width="300" height=" 300">
       </div>
       <div class="column">
-        <img src="https://img.freepik.com/free-vector/different-religion-culture-people-representative-traditional-clothes-set_213110-759.jpg?size=626&ext=jpg" alt="" />
+        <img  class="image-diversity" src="https://img.freepik.com/free-vector/different-religion-culture-people-representative-traditional-clothes-set_213110-759.jpg?size=626&ext=jpg" alt="" />
       </div>
       <div id="diversity1" class="row">
         <div class="col-lg-6">
-            <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/11/banner-image.jpg" alt="" width="300" height="200">
-            <br><br><img src="https://take10volunteer.org/wp-content/uploads/2020/02/Hero-Image-1.jpg" alt="" width="300" height="200">
+          <img class="image-diversity" src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/11/banner-image.jpg" alt="" width="300" height="200">
+          <br><br><img src="https://take10volunteer.org/wp-content/uploads/2020/02/Hero-Image-1.jpg" alt="" width="300" height="200">
         </div>
         <div id="diversity2" class="col-lg-6">
-          <img src="https://pbs.twimg.com/media/Eqt6_a6UcAA-5N_.jpg" alt="" height="400" width="250">
+          <img class="image-diversity" src="https://pbs.twimg.com/media/Eqt6_a6UcAA-5N_.jpg" alt="" height="400" width="250">
         </div>
       </div>
     </div>
-    </center>
-    <hr>
-    <center>
-    <h4>Some other references</h4> <br>
-    <iframe src="https://www.holidify.com/country/india/places-to-visit.html" width="" height=""></iframe>
-    <iframe src="https://www.planetware.com/india/best-places-to-visit-in-india-ind-1-26.htm" width="" height=""></iframe>
+  </center>
+  <br>
+  <center id="references"> <br>
+    <h4>Some other references</h4> <br> <br>
+    <div class="row">
+      <div class="col-lg-6">
+          <iframe src="https://www.holidify.com/country/india/places-to-visit.html" width="" height=""></iframe>
+      </div>
+      <div class="col-lg-6">
+        <iframe src="https://www.planetware.com/india/best-places-to-visit-in-india-ind-1-26.htm" width="" height=""></iframe>
+      </div>
+    </div>
     <br> <br>
-    <a style="color: black; text-decoration:underline;" href="https://goo.gl/maps/jmu7azNNmZXAwi8fA">Click here to find us</a>
-    </center>
+    <a class="findUs" style="color: black;" href="https://goo.gl/maps/jmu7azNNmZXAwi8fA">Click here to find us</a>
+  </center>
 
-  </body>
+</body>
+
 </html>

@@ -12,8 +12,8 @@ var m = mins - hours * 60;
 var s = secs - mins * 60;
 
 document.getElementById("timer").innerHTML =
-  '<div>' + d + '<span>Days</span></div>' +
-  '<div>' + h + '<span>Hours</span></div>' +
-  '<div>' + m + '<span>Minutes</span></div>' +
-  '<div>' + s + '<span>Seconds</span></div>';
+  '<div>' + d + '<span> <br> Days</span></div>' +
+  '<div>' + h + '<span> <br>  Hours</span></div>' +
+  '<div>' + m + '<span><br> Minutes</span></div>' +
+  '<div>' + s + '<span><br> Seconds</span></div>';
 setInterval('updateTimer()', 1000);
